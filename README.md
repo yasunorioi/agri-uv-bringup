@@ -56,6 +56,9 @@ pio run -e atoms3r-uv-lcd -t upload
 pio run -e m5basic-uv-lcd -t upload
 ```
 
+> 🛠 **ビルド環境（Windows / Linux 共用）・Linux 初回セットアップ（udev 等）** →
+> [agri-node-poe-core/docs/cross-platform-build.md](https://github.com/yasunorioi/agri-node-poe-core/blob/main/docs/cross-platform-build.md)
+
 > AtomS3R は USB-serial チップを持たないため、Serial デバッグは USB-CDC 経由
 > （`ARDUINO_USB_CDC_ON_BOOT=1`）。board プロファイルは `m5stack-atoms3` を流用し、
 > M5Unified が実機（GC9107 128×128）を自動判別する。
