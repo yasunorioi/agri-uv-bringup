@@ -1,6 +1,6 @@
 # agri-uv-bringup
 
-DFRobot Gravity UV Index Sensor **SEN0636**（240–370nm、UV/UVA/UVB/UVC、UV Index 0–11 +
+DFRobot Gravity UV Index Sensor [**SEN0636**](https://wiki.dfrobot.com/sen0636/)（240–370nm、UV/UVA/UVB/UVC、UV Index 0–11 +
 Risk Level 0–4 + 生値 mV）の **疎通確認用スケッチ**。値を目視しながら配線・設置位置を
 決めるための治具で、最終形ではない。本番は Atom PoE ノード（`agri-uv-poe`）に 1:1 移植予定。
 
@@ -8,8 +8,8 @@ M5Unified がボードを自動判別するので、**1 ソース / 2 env** で 
 
 | env | ホスト | LCD | UART (UART2) |
 |-----|--------|-----|--------------|
-| `m5basic-uv-lcd` | M5Stack Basic (Gray) | ILI9341 320×240 | Port C **G16 / G17** |
-| `atoms3r-uv-lcd` | M5 AtomS3R | GC9107 128×128 | Grove **G1 / G2** |
+| `m5basic-uv-lcd` | [M5Stack Basic](https://docs.m5stack.com/en/core/basic) (Gray) | ILI9341 320×240 | Port C **G16 / G17** |
+| `atoms3r-uv-lcd` | [M5 AtomS3R](https://docs.m5stack.com/en/core/AtomS3R) | GC9107 128×128 | Grove **G1 / G2** |
 
 UART ピンは build flag `UV_UART_RX` / `UV_UART_TX` で env ごとに注入し、`main.cpp` は
 `M5.Display.width()` から small / large レイアウトを実行時に選ぶ。
